@@ -474,3 +474,7 @@ hr.thin {
         bottom: 0;
     }
 }
+
+.has-jax .MathJax_Display{
+    width:75%;
+}

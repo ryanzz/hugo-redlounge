@@ -125,6 +125,7 @@ by explicitly setting variables. They are as follows:
  - ```authorlinkedin``` The full URL to the author's LinkedIn profile (opens in a new window)
  - ```authorfacebook``` The full URL to the author's Facebook page/profile (opens in a new window)
  - ```authorgoogleplus``` The full URL to the author's Google+ page/profile (opens in a new window)
+ - ```mathjax``` A boolean value to indicate whether to enable mathjax
 
 ### Template Partials
 
