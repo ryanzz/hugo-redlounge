@@ -34,6 +34,7 @@
             <h3 class="post-subtitle">
             	{{ .Params.subtitle }}
             </h3>
+            <p class="post-meta">
             {{ if not .Params.nodate }}
             	<span class="post-date">
                 	<span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
@@ -45,6 +46,7 @@
             		{{ partial "authorsocial.html" . }}
             	{{ end }}
             {{ end }}
+            </p>
 
 			{{ $Site := .Site }}
 			{{ if .Params.categories }}

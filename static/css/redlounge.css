@@ -164,6 +164,7 @@ h1.post-title a {
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	font-size: 1.0rem;
+    margin-right: 5px;
 }
 .post-date-day {
 	font-size: 1.5rem;
@@ -220,6 +221,7 @@ a.post-author {
 }
 .post-title {
     font-size: 2rem;
+    line-height: 1.2em;
     color: #222;
     margin-bottom: 0.25rem;
 }
@@ -232,8 +234,8 @@ a.post-author {
 }
 .post-reading-time {
 	display: inline;
-	font-size: 0.65rem;
-	color: #aeaeae;
+	font-size: 0.8rem;
+	color: #555;
 }
 .post-avatar-wrapper {
 	width: 50px;
@@ -282,10 +284,13 @@ a.post-author {
     margin: 0;
 }
 p.post-meta {
+    margin-top: 0.6em;
 	margin-bottom: 0;
 }
 .post-meta a {
 	color: #616161;
+    margin-left:5px;
+    margin-right:5px;
 }
 .post-meta a:hover {
 	color: #E54028;
@@ -408,17 +413,20 @@ nav#TableOfContents li {
     padding: 1rem 0;
     font-weight: 100;
     color: #aeaeae;
-    font-size: 0.7rem;
 }
-.footer a, .footer p {
-	color: #aeaeae;
+.footer a {
+    cursor: pointer;
+    color:#7F1000;
 }
 .footer a {
 	text-decoration: none;
 }
 .footer a:hover {
-	color:#E54028;
+	color: #E54028;
 	text-decoration: underline;
+}
+.footer p{
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus {
@@ -440,7 +448,7 @@ hr.thin {
 	height: 1px;
 	border: 0;
 	color: #eee;
-	background-color: #eee;
+	background-color: #ddd;
 	width: 90%;
 }
 
