@@ -33,14 +33,16 @@
                 {{ if not .Params.noread }}
                     <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em></span>
                 {{ end }}
-                {{ if .Params.categories }}
-                <div class="post-categories">
-                    {{ range .Params.categories }}
-                    <a class="post-category post-category-{{ . | urlize }}" href="{{ $Site.BaseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>
-                    {{ end }}
-                </div>
-                {{ end }}
-            </p>
+			</p>
+			
+			{{ if .Params.categories }}
+			<div class="post-categories">
+				{{ range .Params.categories }}
+				<a class="post-category post-category-{{ . | urlize }}" href="{{ $Site.BaseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>
+				{{ end }}
+			</div>
+			{{ end }}
+            
             <article class="post-summary">
                   {{ .Summary }}
               </article>
